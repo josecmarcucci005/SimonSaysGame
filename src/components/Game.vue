@@ -314,7 +314,7 @@ export default {
 
         this.restartGame()
 
-        this.showAlert('error', 'Game Over! You choose the incorrect color!')
+        this.showAlert('error', 'Game Over! You choose the incorrect color! Your score was: ' + this.userScore)
       }
       this.userIdx++
 
@@ -327,7 +327,7 @@ export default {
 
         this.restartGame()
 
-        this.showAlert('sucess', 'Well Done! You have completed the game.')
+        this.showAlert('sucess', 'Well Done! You have completed the game. Your score was: ' + this.userScore)
       } else if (this.userIdx === this.tempSeq.length) {
         this.userScore = this.userIdx
 
